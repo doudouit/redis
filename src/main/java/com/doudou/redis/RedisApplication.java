@@ -15,7 +15,7 @@ import java.io.IOException;
 public class RedisApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = SpringApplication.run(RedisApplication.class, args);
+        SpringApplication.run(RedisApplication.class, args);
         // TestRedis testRedis = context.getBean(TestRedis.class);
         // testRedis.testRedis();
 
@@ -28,13 +28,13 @@ public class RedisApplication {
 
 
         // 测试订阅过期消息
-        RedisTest redisTest = context.getBean(RedisTest.class);
+        /*RedisTest redisTest = context.getBean(RedisTest.class);
         redisTest.start();
         try {
             System.in.read();
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
     }
 
 
